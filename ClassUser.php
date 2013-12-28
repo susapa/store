@@ -89,7 +89,7 @@ class user {
             echo '<td>' . $resultQuery["sex"] . '</td>';
             echo '<td>' . $resultQuery["type"] . '</td>';
             echo '<td>' . $resultQuery["status"] . '</td>';
-            echo '<td><a href="EditUser.php?id=' . $resultQuery["id"] . '">แก้ไข</a></td></tr>';
+            echo '<td><a href="EditUser.php?id=' . $resultQuery["id"] . '"><img src="content/edit.png" width="22" height="22"></a></td></tr>';
         }
         echo '</table>';
     }
