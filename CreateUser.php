@@ -55,7 +55,13 @@
     <?php
     include("/ConDB.php");
     include("/ClassUser.php");
-    ?>
+    if(isset($_POST["firstname"])){
+        $updateUser = new user();
+        //$updateUser->setFirstName($_POST["firstname"]);
+       // $updateUser->setLastName($_POST["lastname"]);
+        $updateUser->update($_POST["id"],$_POST["firstname"],$_POST["lastname"]);
+    }
+   ?>
     <body>
         <div class="box">
             <fieldset>
